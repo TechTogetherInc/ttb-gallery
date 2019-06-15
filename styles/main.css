@@ -1071,6 +1071,7 @@ img.help-4 {
   font-size: 2.5vw;
   color: #000000;
   margin: 5% 0 0 15%;
+  font-weight: 500;
 }
 .takeaways h5 span {
   color: #828EF4;
@@ -1248,94 +1249,6 @@ width: 100%;
     background: inherit;
 }
 
-/* Footer Styling */
-/*
-.footer {
-  padding-top: 2vh;
-  position: relative;
-  overflow: hidden;
-  float: left;
-  clear: left;
-  width: 100%;
-  z-index: -100;
-}
-footer .footer-logo {
-  padding-bottom: 6%;
-}
-
-footer h1, h2 {
-  color: #FFFFFF;
-  font-family: 'Lato', Arial, sans-serif;
-  font-size:3vw;
-  margin: 0;
-  padding: 0;
-}
-footer h2 {
-  font-size:2vw;
-  text-align: left;
-  padding: 2.5% 0;
-}
-footer h3 {
-  color: #cdcdcd;
-  font-family: 'Lato', Arial, sans-serif;
-  font-size:2vw;
-  margin: 0;
-  padding: 0;
-}
-footer .newsletter {
-  padding-top: 8vh;
-  padding-left: 8%;
-}
-footer .social-media {
-  padding-top: 8vh;
-}
-footer .social-links img{
-  padding-top: 3vh;
-}
-footer h4 {
-  display: inline-block;
-  width: 100%;
-  color: #cdcdcd;
-  font-family: 'Lato', Arial, sans-serif;
-  font-size:1vw;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  position:relative;
-  bottom: 5px;
-}
-footer .credits {
-  width: 100%;
-}
-ul {
-    display:inline;
-    margin: 0;
-}
-ul li{
-    display: inline;
-}
-li img {
-  width: 30%;
-  height: auto;
-}
-
-@media only screen and (max-width: 480px) {
-  footer .col {
-    width: 100%;
-  }
-  footer img{
-    width: 60%;
-    margin:0 auto;
-  }
-  footer button {
-    margin: 0 auto;
-  }
-}
-
-}*/
-
-
-
 .footer-distributed{
 	background-color: #828EF4;
 	box-sizing: border-box;
@@ -1366,7 +1279,6 @@ li img {
 	width: 40%;
 }
 
-/* The company logo */
 
 .footer-distributed h3{
 	color:  #ffffff;
@@ -1560,22 +1472,24 @@ footer .button:hover {
   background-color: #E36850;
 }
 
-
-/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-@media (max-width: 480px) {
-  .footer-distributed .footer-company-name{
-    padding-left: 0px;
-  }
-  footer .button {
-    margin-left: 0;
+@media (min-width: 758px) and (max-width: 880px) {
+  footer .footer-left img {
+    width: 82% !important;
   }
 }
 
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
+  i.fa.fa-map-marker {
+    margin: 0;
+  }
+
+  i.fa.fa-phone {
+    margin: 0;
+  }
+
+  .mailchimp {
+    margin: 0;
+  }
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
@@ -1597,6 +1511,38 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
   .footer-distributed .footer-company-name{
     margin: 0;
     text-align: center;
+}
+footer .footer-company-name {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.footer-distributed .footer-company-name{
+  padding-left: 0px;
+}
+footer .button {
+  margin-left: 0;
+  text-align: center;
+}
+
+footer .footer-left img {
+  width: 75%;
+}
+
+footer p.subhead {
+  padding: 0;
+  margin: 0;
+}
+
+footer .button .label {
+  font-size: 10px;
+}
+
+#mailchimp input {
+  margin-left: 0;
+}
+#mc_embed_signup_scroll .button {
+  margin-left: 0;
 }
 
 }
